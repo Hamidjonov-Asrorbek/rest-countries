@@ -29,7 +29,8 @@ if (localStorage.getItem("darkMode") === "dark") {
     dark_icon.classList.remove("hidden");
 }
 
-darkmode.addEventListener( "click", () =>{
+darkmode.addEventListener( "click", (e) =>{
+    e.preventDefault();
     if(document.body.classList.contains("light")){
         document.body.classList.remove('light');
         document.body.classList.add('dark');
