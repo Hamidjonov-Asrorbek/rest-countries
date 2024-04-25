@@ -1,0 +1,189 @@
+:root{
+    --bgColor: #f2f2f2;
+    --cardColor: #fff;
+    --textColor: #111517;
+}
+
+/* header */
+header{
+    background: var(--cardColor);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 23px;
+    padding-bottom: 24px;
+}
+.header-title{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    color: var(--textColor);
+}
+
+.darkmode{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: inherit;
+    cursor: pointer;
+}
+.dark__text{
+    color: var(--textColor);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+/* ****************** */
+
+/* main */
+
+/* search and select */
+
+  .search{
+    background: var(--bgColor);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: 100%;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+.search-form {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    gap: 25px;
+    border-color: #cbd5e1;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    color: var(--textColor);
+    background-color: var(--cardColor);
+    border-radius: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 16px;
+}
+.search-input {
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: fit-content;
+    background-color: transparent;
+    color: var(--textColor);
+}
+.search-input::placeholder{
+    color: var(--textColor);
+
+}
+.search-form:hover{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+.search-form:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+}
+
+.select{
+    width: 100%;
+    max-width: 200px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    background-color: var(--cardColor);
+    color: var(--textColor);
+}
+
+.option_item{
+    color: var(--textColor);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* **************** */
+
+/* state */
+
+.state-container {
+    color: var(--textColor);
+    padding-top: 32px;
+}
+.states {
+    display: grid;
+    row-gap: 75px;
+    column-gap: 75px;
+    grid-template-columns: repeat(4, 264px);
+    padding-top: 50px;
+    justify-content: center;
+}
+.state{
+    width: 100%;
+    max-width: 264px;
+    background-color: var(--cardColor);
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+    color: var(--textColor);
+    transition: 0.6s;
+}
+.state:hover{
+    box-shadow: 2px 2px 5px 5px var(--textColor);
+}
+.state:hover img{
+    border-radius: 5px;
+}
+.state img {
+    height: 160px;
+    width: 100%;
+    transition: 0.6s;
+}
+hr{
+    background-color: #111517;
+    color: #111517;
+}
+.state__text {
+    padding: 24px 0 14px 24px;
+
+}
+.state__title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+.state_desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.state__desc_item{
+    display: flex;
+    gap: 7px;
+    color: var(--textColor);
+    align-items: center;
+}
+.state__desc_item p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+
+}
+.state__desc_item span{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 100px;
+  }
+
+.hidden {
+    display: none;
+}

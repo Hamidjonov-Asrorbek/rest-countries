@@ -1,0 +1,218 @@
+.about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 100%;
+}
+/* .about-container {
+} */
+.back_home {
+    display: flex;
+    width: 100%;
+    max-width: fit-content;
+    padding: 6px 18px;
+    border-radius: 5px;
+    gap: 10px;
+    align-items: center;
+    color: var(--textColor);
+    margin-bottom: 80px;
+    background: var(--cardColor);
+    border: 1px solid var(--cardColor);
+    transition: 0.8s;
+}
+.back_home:hover{
+    background: var(--textColor);
+    color: var(--cardColor);
+}
+.back_home p{
+    /* color: var(--textColor); */
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+.card img{
+    /* margin-right: 44px; */
+    border: 1px solid var(--textColor);
+}
+.card__text {
+    margin-top: 39px;
+    margin-bottom: 39px;
+    box-sizing: border-box;
+}
+.text__title {
+    color: var(--textColor);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    margin-bottom: 23px;
+}
+.card__desc {
+    width: 100%;
+    max-width: 574px;
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    margin-bottom: 68px;
+}
+.right_desc {
+    gap: 10px;
+}
+.left_desc {
+    gap: 10px;
+}
+.state__desc_item1{
+    width: 100%;
+    /* max-width: 230px; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.state__desc_item1 p{
+    color: var(--textColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.state__desc_item1 span{
+    width: 100%;
+    max-width: fit-content;
+    color: var(--textColor);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.border_items{
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
+.border_items p{
+    color: var(--textColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.border__card{
+    width: 100px;
+    max-width: fit-content;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.border_btn{
+    padding: 5px 10px;
+    text-align: center;
+    background: var(--cardColor);
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+    color: var(--textColor);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    transition: 0.8s;
+}
+.border_btn:hover{
+    background: var(--textColor);
+    color: var(--cardColor);
+    border-radius: 5px;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 100px;
+  }
+
+.hidden {
+    display: none;
+}
+
+/* ************************** */
+
+/* media */
+
+@media screen and (max-width: 1200px) {
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .back_home{
+        justify-content: center;
+        margin-inline: auto;
+    }
+    .border_items{
+        flex-direction: column;
+        width: 100%;
+        max-width: 800px;
+        align-items: center;
+        justify-content: center;
+    }
+    .border__card{
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card__desc{
+        flex-direction: column;
+        gap: 32px;
+    }
+    .card img{
+        width: 100%;
+        max-width: 320px;
+        height: 229px;
+    }
+    .border__card{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px;
+    }
+    .card{
+        padding-inline: 20px;
+    }
+    .state__desc_item1{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card img{
+        width: 100%;
+        max-width: 320px;
+        height: 229px;
+    }
+    .border__card{
+        gap: 20px;
+    }
+    .card{
+        padding-inline: 5px;
+    }
+    .back_home{
+        margin-bottom: 64px;
+    }
+    .about{
+        padding-top: 40px;
+        padding-bottom: 62px;
+    }
+    .state__desc_item1 p{
+        font-size: 14px;
+    }
+    .state__desc_item1 span{
+        width: 100%;
+        max-width: fit-content;
+        font-size: 14px;
+    }
+    .state__desc_item1{
+        gap: 10px;
+    }
+}
